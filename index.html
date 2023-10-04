@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela de Preços</title>
+</head>
+
+<body onload="view()">
+    <header >
+        <img id="logoGrafica" src="imagem/logo_grafica.png" alt="" >
+        <img id="Zap" src="imagem/telZap.png" alt="" >
+    </header>
+    <section style=" width:100%; display:inline-flex;text-align: center;border: 1px solid #333;margin: 0 auto;">
+        
+        
+    
+       
+        <article id="principal" >
+            <h2 >BANNERS E LONAS PERSONALIZADAS</h2>
+            <picture style="text-align: center;">
+                <img src="imagem/Banner.png" alt="" style="width: 100%; max-width: 600px; margin: 0 auto;">
+            </picture>
+            <div id="descricao">
+
+               
+                <h4 style="font-family: Arial, Helvetica, sans-serif; color:#fff">O que é Banner?</h4>
+                
+                <p style="border-radius:5px 5px 0 0">O banner é uma peça fabricada em tamanhos maiores. Ele é utilizado principalmente para apresentações em eventos e para a divulgação de estabelecimentos comerciais. No entanto, apesar de não haver um limite para a criação, é rara a produção de banners com tamanho inferior a 40x60cm.</p>
+                    <p>Da mesma forma, não existe um tamanho máximo para a fabricação, assim como para a impressão. O limite consiste no tamanho dos padrões da saída das impressoras que, geralmente, alcançam até 3,20 metros.</p>
+                    <p style="border-radius:0 0 5px 5px ">O banner é um material promocional, sendo uma peça que precisa ser chamativa e transmitir a mensagem desejada, seja ela comercial ou acadêmica.</p>
+            </div>
+            <article>
+                <table id="mUsados" >
+                    <tr >
+                        <td colspan="2">MAIS USADOS</td>
+                        <td></td>
+                    </tr>
+                        <tr>
+                            <td>0.90 x 0.70 ------------</td>
+                            <td>R$63,00</td>
+                        </tr>
+                        <tr>
+                            <td>1.20 x 0.70 ------------</td>
+                            <td>R$80,00</td>
+                        </tr>
+                        <tr>
+                            <td>1.50 x 0.80 ------------</td>
+                            <td>R$96,00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">valores sem a arte</td>
+                        </tr>
+                    </table>
+                </article>
+                
+                
+                <article id="calculadora">
+                    <table  >
+                        <tr style="text-align: center; font-weight: bold; ">
+                            <td colspan="2" style="padding: 8px; background-color: #333; color: #fff;">Calculadora</td>
+                        </tr>
+                        <tr>
+                            <td>Altura </td>
+                            <td  ><input id="altu" type="number" min="0" step="0.02"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="title">Largura </td>
+                            <td><input id="larg" type="number" min="0" step="0.02"></td>
+                        </tr>
+                        <tr>
+                            <td>Metro²:</td>
+                            <td id="metroQ"></td>
+                        </tr>
+                       
+                        <tr>
+                            <td class="title">Já tenho a arte</td>
+                            <td><input id="radSim" type="radio"  name="arte"> sim &shy;  &shy; &shy;  &shy; <input id="radNao" type="radio" name="arte" checked>não</td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td class="title">Valor R$</td>
+                            <td id="result"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input id="botao" type="button" value="Calcular" onclick="calcBanner()" ></td>
+                        </tr>
+                    </table>
+                    
+                </article>
+        
+                <!--
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente eum soluta illum fugit rerum odit, itaque laudantium non, quis vel, dolores numquam laborum facilis ratione nisi consequatur hic unde?</p>
+                
+                -->
+            
+        </article>
+        <iframe id="frame" src="banner.html" frameborder="0"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente eum soluta illum fugit rerum odit, itaque laudantium non, quis vel, dolores numquam laborum facilis ratione nisi consequatur hic unde?</p></iframe>
+    </section>
+    
+
+    
+    
+   <footer >
+    <p >Rua Cachoeiro de Itapemirim - Marcilio de Noronha - Viana/ES</p>
+
+   </footer>
+</body>
+<script>
+    const tela = window.screen.width;
+    
+    altura = document.getElementById('altu')
+    largura = document.getElementById('larg')
+    arte = document.getElementById('radNao')
+    
+   function view(){
+    frame = document.querySelector("#frame")
+    descricao = document.querySelector("#descricao")
+        if(tela < 800){
+            frame.style.display = "none"
+            descricao.style.display = "block"
+        }
+   }
+    function calcBanner(){
+        metro = (Number(altura.value)* Number(largura.value))
+        metroQ.innerHTML = `${(metro).toFixed(2)} metro²`
+        
+        if(Number(altura.value) =="" || Number(largura.value)==""){
+
+            alert('Faltam dados para fazer o calculo')
+            metroQ.innerHTML = `Valores inválidos`
+        
+        } else if(arte.checked){
+
+            if(Number(altura.value)* Number(largura.value)<=0.5){
+
+                result.innerHTML = `60.00`
+
+            }else if( (Number(altura.value)* Number(largura.value)) > 0.5 && (Number(altura.value)* Number(largura.value)) <= 0.8 ){
+                
+                result.innerHTML = ((metro*100)+40).toFixed(2)
+
+            }else if((Number(altura.value)* Number(largura.value)) > 0.8 && (Number(altura.value)* Number(largura.value)) <= 1 ){
+
+                result.innerHTML = ((metro*95)+40).toFixed(2)
+
+            }else{
+
+                result.innerHTML = ((metro*62)+40).toFixed(2)
+            }
+        
+        }else{
+
+            if(Number(altura.value)* Number(largura.value)<=0.5){
+
+result.innerHTML = `60.00`
+
+}else if( (Number(altura.value)* Number(largura.value)) > 0.5 && (Number(altura.value)* Number(largura.value)) <= 0.8 ){
+
+result.innerHTML = (metro*100).toFixed(2)
+
+}else if((Number(altura.value)* Number(largura.value)) > 0.8 && (Number(altura.value)* Number(largura.value)) <= 1 ){
+
+result.innerHTML = (metro*95).toFixed(2)
+
+}else{
+
+result.innerHTML = (metro*80).toFixed(2)
+}
+        }
+    }
+    
+</script>
+</html>
