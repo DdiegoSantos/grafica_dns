@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e3f2fd;
+}
+
+header#cabecalho {
+    background-image: url('imagem/fundo-header.png');
+    background-size: 100%;
+    background-color: #e3f2fd;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header#cabecalho img {
+    height: 20px;
+    margin-left: 20px;
+}
+
+header#cabecalho p {
+    margin: auto;
+    color: #fff;
+    font-weight: 300;
+    font-size: clamp(7px, 1vw, 2vw);
+
+}
+
+header#cabecalho div {
+    margin: 0 auto;
+}
+
+#cab-contato a{
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+
+}
+
+#cab-contato img {
+    margin-right: 20px;
+    height: 50%;
+    max-height: 20px;
+
+}
+
+.preços {
+    font-weight: 500;
+    font-size: 1.6em;
+    text-align: center;
+    background-color: rgb(59, 141, 5);
+    color: #fff;
+
+}
+
+.card {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    margin: auto;
+}
+
+#fotoMarketing {
+    width: 100%;
+}
+
+#fotoMarketing img {
+    width: 100%;
+}
+
+.col {
+    margin: 20px 0;
+}
+
+#servicos {
+    background-color: rgb(13, 13, 102);
+    display: flex;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+#banner {
+    background-color: rgb(13, 13, 102);
+    width: 100%;
+    padding: 50px 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#banner h2 {
+    color: #fff;
+}
+
+#banner table {
+    font-size: 0.8em;
+}
+
+#bemVindo {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#bemVindo h2 {
+    margin: auto;
+    font-size: clamp(16px, 4vw, 3ex);
+
+}
+
+#bemVindo p {
+    font-size: clamp(15px, 1.2vw, 35ex);
+}
+
+#title-bv {
+    max-width: 600px;
+    text-align: justify;
+}
+
+#bemVindo h2 span {
+    color: rgb(199, 18, 18);
+    font-weight: 700;
+
+}
+
+.bemVindo {
+    margin: auto;
+}
+
+#bemVindo figure {
+    min-width: 250px;
+    width: 25%;
+    margin: auto;
+
+}
+
+.box-ext-banner {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: auto;
+}
+
+.box-section {
+
+    width: 80%;
+    min-width: 280px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.acab-banner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.coll-aca-b {
+    margin: auto;
+    color: #e3f2fd;
+    text-align: center;
+
+}
+
+.coll-aca-b img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+#panfletos14x10 {
+    display: flex;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+.box-card,
+.box-card-two {
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(236, 236, 232);
+    box-shadow: 1px 1px 10px #33333360;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box-card img,
+.box-card-two img {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.box-card h2,
+.box-card-two h2 {
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgb(14, 136, 20);
+    color: #fff;
+    padding: 5px 0;
+
+}
+
+.box-card h3,
+.box-card-two h3 {
+    font-size: clamp(18px, 1vw, 2vw)
+}
+
+.box-card p,
+.box-card-two p {
+    padding: 0 5px;
+}
+
+.box-card-two {
+    background-color: bisque;
+}
+
+.box-card-two h2 {
+    background-color: rgb(235, 25, 25);
+}
+
+#contato-zap img {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    width: 60px;
+}
