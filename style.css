@@ -8,6 +8,13 @@
 
 body {
     background-color: #e3f2fd;
+
+}
+
+#corpo {
+    width: 90%;
+    margin: auto;
+    box-shadow: #33333367 0 0 10px;
 }
 
 header#cabecalho {
@@ -37,7 +44,7 @@ header#cabecalho div {
     margin: 0 auto;
 }
 
-#cab-contato a{
+#cab-contato a {
     display: flex;
     flex-wrap: nowrap;
     text-decoration: none;
@@ -144,7 +151,7 @@ header#cabecalho div {
 
 .box-ext-banner {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: auto;
     margin: auto;
 }
@@ -159,9 +166,19 @@ header#cabecalho div {
 }
 
 .acab-banner {
+    max-width: 500px;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    border: solid #333;
+}
+
+#acab-banner-box1 {
+    width: 100%;
+
+    text-align: center;
+    color: #fff
 }
 
 .coll-aca-b {
@@ -172,11 +189,37 @@ header#cabecalho div {
 }
 
 .coll-aca-b img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
 
 }
+
+#atencao_banner {
+    width: 60%;
+    min-width: 200px;
+    max-width: 400px;
+    height: 120px;
+    border: solid #333;
+    display: block;
+    flex-wrap: nowrap;
+}
+
+#atencao_banner img {
+    border-radius: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+
+}
+
+#atencao_banner div {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: clamp(15px, 1.2vw, 35ex);
+    align-items: center;
+}
+
 
 #panfletos14x10 {
     display: flex;
@@ -186,7 +229,7 @@ header#cabecalho div {
 
 .box-card,
 .box-card-two {
-    width: 300px;
+    width: 200px;
     margin: 20px auto;
     border-radius: 8px;
     overflow: hidden;
@@ -216,9 +259,13 @@ header#cabecalho div {
 
 }
 
+.box-card p,
+.box-card-two p,
 .box-card h3,
+.box-card h2,
+.box-card-two h2,
 .box-card-two h3 {
-    font-size: clamp(18px, 1vw, 2vw)
+    font-size: clamp(12px, 0.8vw, 2vw)
 }
 
 .box-card p,
@@ -228,6 +275,7 @@ header#cabecalho div {
 
 .box-card-two {
     background-color: bisque;
+    width: 200px;
 }
 
 .box-card-two h2 {
