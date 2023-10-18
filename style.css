@@ -171,12 +171,10 @@ header#cabecalho div {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    border: solid #333;
 }
 
 #acab-banner-box1 {
     width: 100%;
-
     text-align: center;
     color: #fff
 }
@@ -200,7 +198,6 @@ header#cabecalho div {
     min-width: 200px;
     max-width: 400px;
     height: 120px;
-    border: solid #333;
     display: block;
     flex-wrap: nowrap;
 }
