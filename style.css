@@ -214,7 +214,7 @@ header#cabecalho div {
     display: flex;
     flex-wrap: nowrap;
     font-size: clamp(15px, 1.2vw, 35ex);
-    align-items: center;
+    align-items: justify;
 }
 
 
