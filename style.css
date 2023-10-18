@@ -195,7 +195,7 @@ header#cabecalho div {
 
 #atencao_banner {
     width: 60%;
-    min-width: 200px;
+    min-width: 300px;
     max-width: 400px;
     height: 120px;
     display: block;
