@@ -287,5 +287,6 @@ header#cabecalho div {
 }
 footer a {
     color:#333;
+    text-align:center;
     margin:auto;
 }
