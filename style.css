@@ -286,5 +286,6 @@ header#cabecalho div {
     width: 60px;
 }
 footer a {
-    color:#fff;
+    color:#333;
+    margin:auto;
 }
