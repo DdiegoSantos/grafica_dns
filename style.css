@@ -44,7 +44,7 @@ header#cabecalho div {
     margin: 0 auto;
 }
 
- a {
+ #cab-contato a {
     display: flex;
     flex-wrap: nowrap;
     text-decoration: none;
@@ -288,5 +288,5 @@ header#cabecalho div {
 footer a {
     color:#333;
     text-align:center;
-    margin:auto;
+    text-decoration:none;
 }
