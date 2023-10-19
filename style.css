@@ -286,7 +286,10 @@ header#cabecalho div {
     width: 60px;
 }
 footer a {
+    text-decoration: none;
     color:#333;
-    text-align:center;
-    text-decoration:none;
+}
+footer{
+    background-color: #999898;
+    padding: 5px;
 }
