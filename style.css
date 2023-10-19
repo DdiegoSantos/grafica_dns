@@ -285,3 +285,6 @@ header#cabecalho div {
     left: 20px;
     width: 60px;
 }
+footer a {
+    color:#fff;
+}
