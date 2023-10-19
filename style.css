@@ -44,7 +44,7 @@ header#cabecalho div {
     margin: 0 auto;
 }
 
-#cab-contato a {
+ a {
     display: flex;
     flex-wrap: nowrap;
     text-decoration: none;
