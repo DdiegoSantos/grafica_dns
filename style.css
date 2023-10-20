@@ -124,7 +124,7 @@ header#cabecalho div {
 }
 
 #bemVindo p {
-    font-size: clamp(15px, 1.2vw, 35ex);
+    font-size: clamp(10px, 1.2vw, 35ex);
 }
 
 #title-bv {
