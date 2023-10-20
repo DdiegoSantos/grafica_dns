@@ -119,7 +119,7 @@ header#cabecalho div {
 
 #bemVindo h2 {
     margin: auto;
-    font-size: clamp(16px, 4vw, 3ex);
+    font-size: clamp(13px, 4vw, 3ex);
 
 }
 
