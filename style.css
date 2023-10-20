@@ -21,22 +21,10 @@ header#cabecalho {
     background-image: url('imagem/fundo-header.png');
     background-size: 100%;
     background-color: #e3f2fd;
-    padding: 10px 0;
+    padding: 20px 0;
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-header#cabecalho img {
-    height: 20px;
-    margin-left: 20px;
-}
-
-header#cabecalho p {
-    margin: auto;
-    color: #fff;
-    font-weight: 300;
-    font-size: clamp(12px, 1vw, 2vw);
 
 }
 
@@ -44,17 +32,50 @@ header#cabecalho div {
     margin: 0 auto;
 }
 
- #cab-contato a {
+ div.sublinhado {
+    
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    margin: none;
+}
+
+header#cabecalho img {
+    height: 20px;
+    margin: 0 0 5px 20px;
+
+}
+
+.logo:hover .sublinhado {
+    width: 130px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s;
+    text-align: right;
+}
+
+header#cabecalho p {
+    margin: auto;
+    color: #fff;
+    font-weight: 300;
+    font-size: clamp(12px, 1vw, 2vw);
+    align-items: center;
+
+}
+
+
+#cab-contato a {
     display: flex;
     flex-wrap: nowrap;
     text-decoration: none;
 
 }
 
-#cab-contato img {
-    margin-right: 20px;
+header#cabecalho #cab-contato img {
+    margin: 0 10px 0 20px;
     height: 50%;
     max-height: 20px;
+
 
 }
 
@@ -119,12 +140,12 @@ header#cabecalho div {
 
 #bemVindo h2 {
     margin: auto;
-    font-size: clamp(13px, 4vw, 3ex);
+    font-size: clamp(12px, 3.4vw, 3ex);
 
 }
 
 #bemVindo p {
-    font-size: clamp(10px, 1.2vw, 35ex);
+    font-size: clamp(11px, 1.3vw, 35ex);
 }
 
 #title-bv {
@@ -140,6 +161,10 @@ header#cabecalho div {
 
 .bemVindo {
     margin: auto;
+}
+
+.card {
+    border-radius: 0;
 }
 
 #bemVindo figure {
@@ -176,7 +201,12 @@ header#cabecalho div {
 #acab-banner-box1 {
     width: 100%;
     text-align: center;
-    color: #fff
+    color: #fff;
+}
+
+#fundo_lonas {
+    display: flex;
+    margin: auto;
 }
 
 .coll-aca-b {
@@ -185,11 +215,16 @@ header#cabecalho div {
     text-align: center;
 
 }
-
+.coll-aca-b{
+    margin:0 5px;
+    width: 100px;
+    
+}
 .coll-aca-b img {
     height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    width:100%;
+    border-radius: 10%;
+    
 
 }
 
@@ -200,6 +235,7 @@ header#cabecalho div {
     height: 120px;
     display: block;
     flex-wrap: nowrap;
+    margin: auto;
 }
 
 #atencao_banner img {
@@ -214,7 +250,7 @@ header#cabecalho div {
     display: flex;
     flex-wrap: nowrap;
     font-size: clamp(15px, 1.2vw, 35ex);
-    align-items: justify;
+    align-items: center;
 }
 
 
@@ -285,11 +321,13 @@ header#cabecalho div {
     left: 20px;
     width: 60px;
 }
+
 footer a {
     text-decoration: none;
-    color:#333;
+    color: #333;
 }
-footer{
+
+footer {
     background-color: #999898;
     padding: 5px;
 }
