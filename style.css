@@ -324,6 +324,48 @@ header#cabecalho #cab-contato img {
     left: 20px;
     width: 60px;
 }
+#parceiros {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#ninha {
+    background-color: black;
+}
+
+#musaFitness {
+    background-color: #F391B5;
+}
+#diego_designer {
+    background-image:url("imagem/background-diego.png");
+    background-position: 50% 0;
+    background-size: auto 100%;
+}
+
+.lojas {
+    margin:20px auto ;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding: 5px;
+    font-size: clamp(12px, 0.8vw, 2vw);
+    display: flex;
+    flex-direction: column;
+}
+
+.lojas img {
+    width: 70%;
+    margin: auto;
+
+}
+
+.cont-parceiros p {
+    color: #fff;
+
+}
+
 
 footer a {
     text-decoration: none;
