@@ -368,7 +368,7 @@ header#cabecalho #cab-contato img {
     height: 150px;
     text-align: center;
     padding: 5px;
-    font-size: clamp(5px, 0.8vw, 2vw);
+    font-size: clamp(10px, 0.8vw, 2vw);
     display: flex;
     flex-direction: column;
     font-weight: 500;
