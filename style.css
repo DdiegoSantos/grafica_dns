@@ -323,8 +323,7 @@ header#cabecalho #cab-contato img {
     bottom: 30px;
     left: 20px;
     width: 60px;
-}
-#parceiros {
+}#parceiros {
     padding: 50px 0;
     flex-wrap: wrap;
     text-align: center;
@@ -337,14 +336,30 @@ header#cabecalho #cab-contato img {
 #musaFitness {
     background-color: #F391B5;
 }
+
 #diego_designer {
-    background-image:url("imagem/background-diego.png");
+    background-image: url("imagem/background-diego.png");
     background-position: 50% 0;
     background-size: auto 100%;
 }
 
+#manosGame {
+    background-image: url('imagem/background-manos.png');
+    background-size: 100% 100%;
+    ;
+}
+
+#manosGame img {
+    width: 90%;
+}
+
+#manosGame p {
+    color: #333;
+
+}
+
 .lojas {
-    margin:20px auto ;
+    margin: 20px auto;
     align-items: center;
     width: 150px;
     height: 150px;
@@ -353,6 +368,12 @@ header#cabecalho #cab-contato img {
     font-size: clamp(12px, 0.8vw, 2vw);
     display: flex;
     flex-direction: column;
+    font-weight: 500;
+    box-shadow: #33333379 0 0 5px;
+}
+
+.lojas:hover {
+    transform: translateY(-10px);
 }
 
 .lojas img {
@@ -363,7 +384,13 @@ header#cabecalho #cab-contato img {
 
 .cont-parceiros p {
     color: #fff;
+}
 
+.lojas a {
+    display: block;
+    align-items: center;
+    margin: auto;
+    text-decoration: none;
 }
 
 
