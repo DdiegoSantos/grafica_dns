@@ -166,6 +166,9 @@ header#cabecalho #cab-contato img {
 .card {
     border-radius: 0;
 }
+.card:hover{
+    transform: translateY(-10px);       
+}
 
 #bemVindo figure {
     min-width: 250px;
