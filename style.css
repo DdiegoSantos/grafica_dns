@@ -377,6 +377,7 @@ header#cabecalho #cab-contato img {
 
 .lojas:hover {
     transform: translateY(-10px);
+    box-shadow: #33333394 0 0 5px;
 }
 
 .lojas img {
