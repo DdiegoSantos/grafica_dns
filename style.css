@@ -364,11 +364,11 @@ header#cabecalho #cab-contato img {
 .lojas {
     margin: 20px auto;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     text-align: center;
     padding: 5px;
-    font-size: clamp(6px, 0.8vw, 2vw);
+    font-size: clamp(5px, 0.8vw, 2vw);
     display: flex;
     flex-direction: column;
     font-weight: 500;
