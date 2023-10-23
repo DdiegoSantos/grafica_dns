@@ -32,8 +32,8 @@ header#cabecalho div {
     margin: 0 auto;
 }
 
- div.sublinhado {
-    
+div.sublinhado {
+
     width: 0px;
     height: 2px;
     background-color: #fff;
@@ -104,6 +104,52 @@ header#cabecalho #cab-contato img {
 
 .col {
     margin: 20px 0;
+    min-width: 250px;
+}
+
+#promocao_panfletos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(164, 163, 219);
+}
+
+#promocao_panfletos figure {
+    height: 100%;
+    width:100%; 
+    max-width:500px;
+    margin: auto
+}
+#promocao_panfletos figure img{
+    height:100%;
+    width:100%; 
+    max-width:500px; 
+    margin:0;
+}
+#promocao_panfletos h2{
+    padding: 4px; 
+    background-color: chocolate;  
+    width: 320px; 
+    margin:20px auto; 
+    text-align: center;
+    color: #fff; 
+    font-weight: 700; 
+    font-size: 55px; 
+    border-radius: 8px;
+}
+p#descricao{
+    text-align: center; 
+    font-weight: 700;
+}
+#promocao_panfletos p#precos{
+    text-align: center;
+    background-color: darkred; 
+    width: 200px; 
+    color: #fff; 
+    margin: 20px auto;
+}
+p#precos span{
+    font-size: 32px; 
+    font-weight: 700;
 }
 
 #servicos {
@@ -165,9 +211,11 @@ header#cabecalho #cab-contato img {
 
 .card {
     border-radius: 0;
+
 }
-.card:hover{
-    transform: translateY(-10px);       
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 #bemVindo figure {
@@ -218,16 +266,18 @@ header#cabecalho #cab-contato img {
     text-align: center;
 
 }
-.coll-aca-b{
-    margin:0 5px;
+
+.coll-aca-b {
+    margin: 0 5px;
     width: 100px;
-    
+
 }
+
 .coll-aca-b img {
     height: 100px;
-    width:100%;
+    width: 100%;
     border-radius: 10%;
-    
+
 
 }
 
@@ -297,14 +347,11 @@ header#cabecalho #cab-contato img {
 
 .box-card p,
 .box-card-two p,
-
-.box-card h2,
-.box-card-two h2 {
-    font-size: clamp(12px, 0.8vw, 2vw)
-}
 .box-card h3,
-.box-card-two h3{
-    font-size: clamp(12px, 1.1vw, 2vw)
+.box-card h2,
+.box-card-two h2,
+.box-card-two h3 {
+    font-size: clamp(12px, 0.8vw, 2vw)
 }
 
 .box-card p,
@@ -326,7 +373,9 @@ header#cabecalho #cab-contato img {
     bottom: 30px;
     left: 20px;
     width: 60px;
-}#parceiros {
+}
+
+#parceiros {
     padding: 50px 0;
     flex-wrap: wrap;
     text-align: center;
@@ -354,6 +403,7 @@ header#cabecalho #cab-contato img {
 
 #manosGame img {
     width: 90%;
+
 }
 
 #manosGame p {
@@ -368,7 +418,7 @@ header#cabecalho #cab-contato img {
     height: 150px;
     text-align: center;
     padding: 5px;
-    font-size: clamp(10px, 0.8vw, 2vw);
+    font-size: clamp(12px, 0.8vw, 2vw);
     display: flex;
     flex-direction: column;
     font-weight: 500;
@@ -377,7 +427,51 @@ header#cabecalho #cab-contato img {
 
 .lojas:hover {
     transform: translateY(-10px);
-    box-shadow: #33333394 0 0 5px;
+
+}
+
+
+.sunn {
+
+
+    aspect-ratio: 1 / 1;
+    animation: 3s linear 0s infinite alternate animating-multiple-properties;
+}
+
+/* é possível animar várias propriedades em uma única animação */
+@keyframes animating-multiple-properties {
+    from {
+        transform: rotate(1000deg);
+
+        filter: brightness(75%);
+    }
+
+    to {
+        transform: rotate(8);
+
+        /* propriedades não definidas, ou seja, 'filtro' reverterá para os valores padrão */
+    }
+}
+
+.sunn {
+
+
+    animation: 500ms linear 0s animating-multiple-properties;
+}
+
+/* é possível animar várias propriedades em uma única animação */
+@keyframes animating-multiple-properties {
+    from {
+        transform: rotate(20deg);
+
+        filter: brightness(75%);
+    }
+
+    to {
+        transform: rotate();
+
+
+    }
 }
 
 .lojas img {
@@ -388,6 +482,8 @@ header#cabecalho #cab-contato img {
 
 .cont-parceiros p {
     color: #fff;
+
+
 }
 
 .lojas a {
@@ -396,7 +492,6 @@ header#cabecalho #cab-contato img {
     margin: auto;
     text-decoration: none;
 }
-
 
 footer a {
     text-decoration: none;
