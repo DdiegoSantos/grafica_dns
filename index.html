@@ -13,29 +13,34 @@
 
 
 <body onload="tela()">
-<nav class="navbar fixed-top  navbar-expand-lg navbar bg-primary" data-bs-theme="dark">
+
+    <nav class="navbar fixed-top  navbar-expand-lg navbar bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              
-              <li class="nav-item">
-                <a class="nav-link" href="cartoes_visitas.html">Cartões de Visitas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="panfletos.html">Panfletos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="banner.html">Banners</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartoes_visitas.html">Cartões de Visitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="panfletos.html">Panfletos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="banner.html">Banners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tags.html">Tags</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-    
+    </nav>
+
 
     <header id="cabecalho">
         <div class="logo">
@@ -52,7 +57,7 @@
 
             </div>
         </div>
-        
+
     </header>
     <!--==========================================================================id="contato-zap"======================-->
 
@@ -73,8 +78,10 @@
                 </div>
                 <div class="carousel-item">
                     <picture>
-                        <source media="(max-width:600px )" srcset="imagem/pan_2500_peq.jpg" type="image/jpg">
-                        <img src="imagem/pan_2500.jpg" class="d-block w-100" alt="...">
+                        <a href="panfletos.html">
+                            <source media="(max-width:600px )" srcset="imagem/pan_2500_peq.jpg" type="image/jpg">
+                            <img src="imagem/pan_2500.jpg" class="d-block w-100" alt="...">
+                        </a>
                     </picture>
                 </div>
                 <div class="carousel-item">
@@ -83,7 +90,7 @@
                         <img src="imagem/dev_marketing.jpg" class="d-block w-100" alt="...">
                     </picture>
                 </div>
-                
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="prev">
@@ -130,6 +137,7 @@
                                     permitem dar visibilidade a marca de forma simples, mas com grande potencial de
                                     venda.
                                 </p>
+                                <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
                             </div>
                         </div>
                     </a>
@@ -145,6 +153,7 @@
                                     todas
                                     as
                                     informações e pontos de venda que uma empresa deseje comunicar aos clientes.</p>
+                                <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
                             </div>
                         </div>
                     </a>
@@ -159,13 +168,15 @@
                                 <p class="card-text">O cartão de visita reflete a identidade e a imagem corporativa da
                                     empresa,
                                     razão pela qual é considerado como uma ferramenta de grande valia para o
-                                    profissional
+                                    profissional.
+
                                 </p>
+                                <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <!-- <div class="col">
+                <div class="col">
                     <div class="card">
                         <img src="imagem/tags.png" class="card-img-top" alt="tags">
                         <div class="card-body">
@@ -175,13 +186,34 @@
                                 para impactar o cliente, agregam muito mais valor à marca e trazem benefícios ao
                                 negócio.
                             </p>
+                            <p style="border: solid #333 1px ;width: 70%; padding: 2px;margin-top: 30px;">+ Saiba mais
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
     </section>
 
+    <section class="box_foto_servico">
+
+        <div class="box-foto">
+
+            <div class="fotosServicos" style="background-image: url('fotos_servicos/aloha.jpg');">
+                <figcaption>cartão visitas 300g</figcaption>
+            </div>
+            <div class="fotosServicos" style="background-image: url('fotos_servicos/ari.jpg');">
+                <figcaption>cartão visitas 300g</figcaption>
+            </div>
+            <div class="fotosServicos" style="background-image: url('fotos_servicos/manos.jpg');">
+                <figcaption>cartão visitas 300g</figcaption>
+            </div>
+            <div class="fotosServicos" style="background-image: url('fotos_servicos/mario.jpg');">
+                <figcaption>cartão visitas 300g</figcaption>
+            </div>
+
+        </div>
+    </section>
 
 
 
@@ -212,7 +244,7 @@
                 </a>
 
             </div>
-            <div class="lojas" id="diego_designer" >
+            <div class="lojas" id="diego_designer">
                 <img src="imagem/diego_nunes_designer.png" alt="">
                 <div class="cont-parceiros">
                     <p>27 99532-1787 <br>
@@ -220,8 +252,7 @@
                 </div>
             </div>
             <div class="lojas " id="manosGame">
-                <a href="#"><img src="imagem/logo_manos.png"
-                        alt="intagram musa fitness">
+                <a href="#"><img src="imagem/logo_manos.png" alt="intagram musa fitness">
                     <div class="cont-parceiros">
 
                         <p>27 99857-1629 <br> 3076-2054</p>
@@ -229,9 +260,20 @@
                 </a>
 
             </div>
+            <div class="lojas " id="multivix">
+                <a href="https://www.instagram.com/eadmultivix_viana/" target="_blank">
+                    <div class="cont-parceiros">
+
+                        <p>POLO VIANA <br><br> 27 99995-6070
+                            <br>@eadmultivix_viana
+                        </p>
+                    </div>
+                </a>
+
+            </div>
         </div>
     </section>
-    
+
 
     <footer class="text-center pt-3">
         <p>Direitos reservados Diego Nunes Santos</p>
@@ -239,6 +281,7 @@
             <p>27 99532-1787 / 99645-8627</p>
         </a>
     </footer>
+
 </body>
 <script src="grafica.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
