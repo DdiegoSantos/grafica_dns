@@ -7,14 +7,21 @@
 }
 
 body {
-    background-color: #e3f2fd;
+    background-color: #ffffff;
+
 
 }
+
 
 #corpo {
     width: 90%;
     margin: auto;
     box-shadow: #33333367 0 0 10px;
+}
+
+section {
+    width: 100%;
+
 }
 
 header#cabecalho {
@@ -25,7 +32,7 @@ header#cabecalho {
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 header#cabecalho div {
@@ -84,8 +91,58 @@ header#cabecalho #cab-contato img {
     font-size: 1.6em;
     text-align: center;
     background-color: rgb(59, 141, 5);
-    color: #fff;
+    color: #dddcdc;
 
+}
+
+.box_foto_servico {
+    background-color: #dfdbdb;
+    text-align: center;
+    height: 100%;
+}
+
+.box-foto {
+    padding: 250px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 70%;
+
+}
+
+.fotosServicos {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: auto 200%;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+.fotosServicos figcaption {
+    margin-top: 370px;
+    color: #fff;
+    opacity: 0;
+}
+
+.fotosServicos:hover figcaption {
+    opacity: 1;
+    transition: 800ms;
+    font-size: 7px;
+    margin-top: 170px;
+    text-shadow: #020202 0 0 15px;
+}
+
+.fotosServicos:hover {
+
+    box-shadow: #333 0 0 15px;
+    transform: scale(2);
+    transition: 0.8s;
+    margin: auto;
+    background-size: auto 95%;
 }
 
 .card {
@@ -115,40 +172,45 @@ header#cabecalho #cab-contato img {
 
 #promocao_panfletos figure {
     height: 100%;
-    width:100%; 
-    max-width:500px;
+    width: 100%;
+    max-width: 500px;
     margin: auto
 }
-#promocao_panfletos figure img{
-    height:100%;
-    width:100%; 
-    max-width:500px; 
-    margin:0;
+
+#promocao_panfletos figure img {
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
 }
-#promocao_panfletos h2{
-    padding: 4px; 
-    background-color: chocolate;  
-    width: 320px; 
-    margin:20px auto; 
+
+#promocao_panfletos h2 {
+    padding: 4px;
+    background-color: chocolate;
+    width: 320px;
+    margin: 20px auto;
     text-align: center;
-    color: #fff; 
-    font-weight: 700; 
-    font-size: 55px; 
+    color: #fff;
+    font-weight: 700;
+    font-size: 55px;
     border-radius: 8px;
 }
-p#descricao{
-    text-align: center; 
+
+p#descricao {
+    text-align: center;
     font-weight: 700;
 }
-#promocao_panfletos p#precos{
+
+#promocao_panfletos p#precos {
     text-align: center;
-    background-color: darkred; 
-    width: 200px; 
-    color: #fff; 
+    background-color: darkred;
+    width: 200px;
+    color: #fff;
     margin: 20px auto;
 }
-p#precos span{
-    font-size: 32px; 
+
+p#precos span {
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -385,8 +447,16 @@ p#precos span{
     background-color: black;
 }
 
+#ninha p {
+    padding-top: 30px;
+}
+
 #musaFitness {
     background-color: #F391B5;
+}
+
+#musaFitness p {
+    padding-top: 5px;
 }
 
 #diego_designer {
@@ -398,17 +468,33 @@ p#precos span{
 #manosGame {
     background-image: url('imagem/background-manos.png');
     background-size: 100% 100%;
-    ;
+
 }
 
 #manosGame img {
     width: 90%;
+    margin-top: 10px;
 
 }
 
 #manosGame p {
     color: #333;
+    padding-top: 50px;
 
+}
+
+#multivix {
+    background-image: url('imagem/multivix_viana.jpg');
+    background-position: 50%;
+    background-size: 100% auto;
+}
+
+#multivix img {
+    width: 130%;
+}
+
+#multivix p {
+    padding-top: 50px;
 }
 
 .lojas {
@@ -423,6 +509,7 @@ p#precos span{
     flex-direction: column;
     font-weight: 500;
     box-shadow: #33333379 0 0 5px;
+    overflow: hidden;
 }
 
 .lojas:hover {
@@ -430,49 +517,6 @@ p#precos span{
 
 }
 
-
-.sunn {
-
-
-    aspect-ratio: 1 / 1;
-    animation: 3s linear 0s infinite alternate animating-multiple-properties;
-}
-
-/* é possível animar várias propriedades em uma única animação */
-@keyframes animating-multiple-properties {
-    from {
-        transform: rotate(1000deg);
-
-        filter: brightness(75%);
-    }
-
-    to {
-        transform: rotate(8);
-
-        /* propriedades não definidas, ou seja, 'filtro' reverterá para os valores padrão */
-    }
-}
-
-.sunn {
-
-
-    animation: 500ms linear 0s animating-multiple-properties;
-}
-
-/* é possível animar várias propriedades em uma única animação */
-@keyframes animating-multiple-properties {
-    from {
-        transform: rotate(20deg);
-
-        filter: brightness(75%);
-    }
-
-    to {
-        transform: rotate();
-
-
-    }
-}
 
 .lojas img {
     width: 70%;
@@ -493,12 +537,106 @@ p#precos span{
     text-decoration: none;
 }
 
+._tags {
+    padding: 150px 0 0 0;
+}
+
+#box_tags {
+    display: flex;
+    background-color: rgb(164, 163, 219);
+    overflow: hidden;
+    height: 300px;
+    align-items: center;
+    background-image: url('imagem/dn.dev.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#box_centro_tags {
+    margin: auto;
+    text-align: center;
+    display: flex;
+
+}
+
+#box_centro_tags h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: clamp(24px, 5vw, 8vw);
+    color: #fff;
+    text-shadow: 0 0 8px #020202;
+}
+
+#box_tags figure {
+    margin-top: -400px;
+    margin-left: -100px;
+    width: 0;
+    max-width: 500px;
+
+}
+
+#box_tags figure img {
+    height: 200%;
+    transform: rotate(45deg);
+
+
+}
+
+/*
+#box_tags h2 {
+    padding: 4px;
+    background-color: chocolate;
+    width: 320px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 55px;
+    border-radius: 8px;
+}
+#box_tags figure img
+
+
+
+*/
+#colmeia img {
+
+
+    aspect-ratio: 1 / 2;
+    animation: 4000s linear 0s infinite alternate animating-multiple-properties;
+}
+
+
+@keyframes animating-multiple-properties {
+    from {
+        transform: rotate(360deg);
+
+        filter: brightness(100%);
+    }
+
+    to {
+        transform: rotate(0);
+
+
+    }
+}
+
+#colmeia {
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: 1750px;
+
+    position: absolute;
+}
+
+
 footer a {
     text-decoration: none;
     color: #333;
 }
 
 footer {
-    background-color: #999898;
+    background-color: #dadada;
     padding: 5px;
 }
