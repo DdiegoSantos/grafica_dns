@@ -535,51 +535,6 @@ p#precos span {
     text-decoration: none;
 }
 
-._tags {
-    padding: 150px 0 0 0;
-}
-
-#box_tags {
-    display: flex;
-    background-color: rgb(164, 163, 219);
-    overflow: hidden;
-    height: 300px;
-    align-items: center;
-    background-image: url('imagem/dn.dev.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
-
-#box_centro_tags {
-    margin: auto;
-    text-align: center;
-    display: flex;
-
-}
-
-#box_centro_tags h1 {
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-size: clamp(24px, 5vw, 8vw);
-    color: #fff;
-    text-shadow: 0 0 8px #020202;
-}
-
-#box_tags figure {
-    margin-top: -400px;
-    margin-left: -100px;
-    width: 0;
-    max-width: 500px;
-
-}
-
-#box_tags figure img {
-    height: 200%;
-    transform: rotate(45deg);
-
-
-}
-
 /*
 #box_tags h2 {
     padding: 4px;
@@ -628,6 +583,13 @@ p#precos span {
     position: absolute;
 }
 
+iframe {
+    width: 100%;
+    height: 70px;
+    margin-bottom: -5px;
+    padding: 0;
+
+}
 
 footer a {
     text-decoration: none;
@@ -644,20 +606,13 @@ footer {
     margin: auto;
 }
 
-#windbanner {
-    display: flex;
+.corpo-section {
+
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     margin: auto;
-}
+    padding-top: 10px;
 
-#windbanner img {
-    height: 300px;
-}
-
-#wind-header {
-    text-align: center;
-    display: flex;
 }
 
 #wind-header h1 {
@@ -665,26 +620,43 @@ footer {
     margin: auto;
     color: #fff;
     text-shadow: #020202 0 0 10px;
-    font-size: 60px;
+    font-size: clamp(40px, 6vw, 120px);
+
 }
 
-#box_wind {
-    display: flex;
-    background-image: url('windbanner/windbanner-screem.jpg');
-    background-position: 50% 50%;
-    background-size: auto 110%;
-    margin: auto;
+#box_wind div {
+    margin-top: 20px;
     width: 100%;
-    height: 300px;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    z-index: 1;
 
 }
 
-#windbanner .card {
+#box_wind img {
+    width: 100%;
+}
+
+.corpo-section .card {
     margin: 20px auto;
+    height: 500px;
+
 }
 
-#windbanner .card:hover {
+.corpo-section .card:hover {
     border: #269c08 solid 1px;
+}
+
+.corpo-section .col {
+
+    margin: auto;
+    width: 25%;
+}
+
+.corpo-section .col img {
+    height: 280px;
 }
 
 #zap-verde {
@@ -692,7 +664,7 @@ footer {
     width: auto;
     position: fixed;
     right: 40px;
-    bottom: 80px;
+    bottom: 10px;
     display: inline-flex;
     z-index: 1;
     height: auto;
@@ -706,4 +678,44 @@ footer {
     width: auto;
     margin: auto 0 auto 0;
 
+}
+
+#box_imas div {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+
+}
+
+#box_imas img {
+    width: 100%;
+}
+
+.box-header {
+    width: 100%;
+    margin-top: 40px;
+    ;
+}
+
+.box-header img {
+    width: 100%;
+}
+
+.imas img {
+    height: auto;
+    ;
+}
+
+.imas .card {
+    margin: 20px auto;
+    height: 450px;
+
+}
+
+.imas {
+    background-color: #fff;
 }

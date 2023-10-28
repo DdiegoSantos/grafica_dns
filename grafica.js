@@ -31,3 +31,9 @@ elemento.style.transition == "5s"
 
 
 }
+function precos(){
+    alert(document.querySelector("#vlor").firstChild.nodeValue);
+    (document.querySelector("#vlor").firstChild.nodeValue) = (document.querySelector("#vlor").value * 0.05)
+}
+
+document.querySelectorAll(".preços > h2").value += (document.querySelectorAll(".preços > h2").value*0.10)
