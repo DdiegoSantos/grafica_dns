@@ -5,7 +5,7 @@ function tela() {
     if (display < 600) {
 
         
-        fundo_lonas.style.background = '#cecece', fundo_lonas.style.padding = '10px';
+        fundo_lonas.style.padding = '10px';
 
         
         boxCard.style.width = '500px'
