@@ -12,7 +12,7 @@
 </head>
 
 
-<body onload="tela()">
+<body onload="tela(),calcularValorBanner(0),calcularValorBanner(1),calcularValorBanner(2)">
     <nav class="navbar fixed-top  navbar-expand-lg navbar bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Home</a>
@@ -125,23 +125,25 @@
                     <img src="imagem/banner.png" class="card-img-top" alt="...">
                     <h3>Banners e Lonas </h3>
                     <table id="tab-banner" class="table table-striped">
-                        <tr>
+                       <tr>
                             <td>TAMANHO </td>
-                            <td>VALOR</td>
+                            <td >VALOR</td>
                         </tr>
                         <tr>
                             <td>90x70</td>
-                            <td>R$65,00</td>
+                            <td id="preco0" >R$65,00</td>
                         </tr>
                         <tr>
                             <td>120x70</td>
-                            <td>R$85,00</td>
+                            <td id="preco1" >R$85,00</td>
                         </tr>
                         <tr>
                             <td>150x80</td>
-                            <td>R$110,00</td>
+                            <td id="preco2" >R$110,00</td>
                         </tr>
-
+                        <tr>
+                            <td colspan="2" id="semana"></td>
+                        </tr>
                     </table>
                 </div>
 
