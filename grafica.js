@@ -12,28 +12,22 @@ function tela() {
 
     }
 }
-function comentario(){
-    // cria um novo elemento div
-    // e dá à ele conteúdo
-    var box = [];
-    var divNova = document.createElement("div");
-    var conteudoNovo = document.createTextNode("Olá, cumprimentos!");
-    box.unshift(divNova.appendChild(conteudoNovo)); //adiciona o nó de texto à nova div criada
-    console.log(box)
-    // adiciona o novo elemento criado e seu conteúdo ao DOM
-    var divAtual = document.getElementById("div1");
-    document.body.insertBefore(divNova, divAtual);
-}
-function rota(){
-elemento = document.querySelector('#diego_designer');
-elemento.style.transform =="rotate(320deg)";
-elemento.style.transition == "5s"
+function calcularValorBanner(item) {
+    var data = new Date();
+    var dia = data.getDate();
+    var mes = data.getMonth()+1;
+    
+    if (dia >= 1 && dia <= 8 ) {
+        var ValorFinal = ["R$55,00", "R$75,00", "R$100,00"];
 
+        var preco = document.getElementById('preco' + item);
+        let semana = document.getElementById('semana');
+        semana.innerHTML = "semana de promoção 1 à 8"
+        semana.style.backgroundColor = 'red';
+        semana.style.color = 'white';
+        semana.style.textTransform = 'uppercase'
+
+        preco.innerHTML = ValorFinal[item]
+    }
 
 }
-function precos(){
-    alert(document.querySelector("#vlor").firstChild.nodeValue);
-    (document.querySelector("#vlor").firstChild.nodeValue) = (document.querySelector("#vlor").value * 0.05)
-}
-
-document.querySelectorAll(".preços > h2").value += (document.querySelectorAll(".preços > h2").value*0.10)
