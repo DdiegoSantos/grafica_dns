@@ -12,7 +12,7 @@
 </head>
 
 
-<body onload="tela()">
+<body onload="tela(), temaMes()">
 
     <nav class="navbar fixed-top  navbar-expand-lg navbar bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
@@ -23,6 +23,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="adesivos.html">Adesivos</a>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="cartoes_visitas.html">Cartões de Visitas</a>
@@ -115,185 +118,210 @@
 
 
         <!--================================================================================================-->
-
-        <div id="bemVindo">
-            <div id="zap-verde">
-
-                <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
-                    <img src="imagem/logo-zap-verde.png" alt="orçamento">
-                </a>
-            </div>
-            <div class="bemVindo" id="title-bv">
-
-                <h2>BEM-VINDO AO <br> <span>NOSSO SITE </span> </h2>
-                <p>Aqui você vai encontrar alguns dos melhores produtos para divulgar seu comércio e aumentar suas
-                    vendas. Oferecemos um serviço de qualidade, com bom atendimento junto com uma ótima agilidade, não
-                    deixe de entrar em contato, faça seu orçamento grátis.</p>
-            </div>
-            <figure class="bemVindo">
-                <img src="imagem/desenho_comp.png" alt="">
-            </figure>
-
-        </div>
     </section>
+    <section >
 
-    <section id="servicos">
-        <div class="box-section">
 
-            <div class="row row-cols-1 row-cols-md-4 ">
-                <div class="col " >
-                    <a href="banner.html" style="text-decoration: none;">
+        <div>
+            <div id="bemVindo">
+                <div id="zap-verde">
+
+                    <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
+                        <img src="imagem/logo-zap-verde.png" alt="orçamento">
+                    </a>
+                </div>
+
+                <div class="bemVindo" id="title-bv">
+
+                    <h2>BEM-VINDO AO <br> <span>NOSSO SITE </span> </h2>
+                    <p>Aqui você vai encontrar alguns dos melhores produtos para divulgar seu comércio e aumentar
+                        suas
+                        vendas. Oferecemos um serviço de qualidade, com bom atendimento junto com uma ótima
+                        agilidade,
+                        não
+                        deixe de entrar em contato, faça seu orçamento grátis.</p>
+                </div>
+                <figure class="bemVindo">
+                    <img src="imagem/desenho_comp.png" alt="" style="width: 100%;">
+                </figure>
+
+            </div>
+        </div>
+
+        <div id="servicos" class="nov">
+            <div class="box-section ">
+
+                <div class="row row-cols-1 row-cols-md-2 ">
+                    <div class="col ">
+                        <a href="banner.html" style="text-decoration: none;">
+                            <div class="card">
+                                <img src="imagem/banner.png" class="card-img-top" alt="banner">
+                                <div class="card-body">
+                                    <h5 class="card-title">Banner e Lona</h5>
+                                    <p class="card-text"> Quando bem pensados os banners impactam o cliente logo na
+                                        primeira
+                                        e
+                                        permitem dar visibilidade a marca de forma simples, mas com grande potencial
+                                        de
+                                        venda.
+                                    </p>
+                                    <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="panfletos.html" style="text-decoration: none;">
+                            <div class="card">
+                                <img src="imagem/panfletos.png" class="card-img-top" alt="panfleto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Panfleto</h5>
+                                    <p class="card-text">Como uma ferramenta de marketing direto, o panfleto pode
+                                        incluir
+                                        todas
+                                        as
+                                        informações e pontos de venda que uma empresa deseje comunicar aos clientes.
+                                    </p>
+                                    <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="cartoes_visitas.html" style="text-decoration: none;">
+                            <div class="card">
+                                <img src="imagem/cartao_visitaVernizLocal.png" class="card-img-top"
+                                    alt="cartão de visita ">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Cartão de Visitas</h5>
+
+                                    <p class="card-text">O cartão de visita reflete a identidade e a imagem
+                                        corporativa
+                                        da
+                                        empresa,
+                                        razão pela qual é considerado como uma ferramenta de grande valia para o
+                                        profissional.
+
+                                    </p>
+                                    <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
                         <div class="card">
-                            <img src="imagem/banner.png" class="card-img-top" alt="banner">
+                            <img src="imagem/tags.png" class="card-img-top" alt="tags">
                             <div class="card-body">
-                                <h5 class="card-title">Banner e Lona</h5>
-                                <p class="card-text"> Quando bem pensados os banners impactam o cliente logo na primeira
-                                    e
-                                    permitem dar visibilidade a marca de forma simples, mas com grande potencial de
-                                    venda.
+                                <h5 class="card-title">Tags</h5>
+                                <p class="card-text">A sua finalidade pode ir bem mais além de apenas informar.
+                                    Quando
+                                    usadas
+                                    para impactar o cliente, agregam muito mais valor à marca e trazem benefícios ao
+                                    negócio.
                                 </p>
-                                <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col">
-                    <a href="panfletos.html" style="text-decoration: none;">
-                        <div class="card">
-                            <img src="imagem/panfletos.png" class="card-img-top" alt="panfleto">
-                            <div class="card-body">
-                                <h5 class="card-title">Panfleto</h5>
-                                <p class="card-text">Como uma ferramenta de marketing direto, o panfleto pode incluir
-                                    todas
-                                    as
-                                    informações e pontos de venda que uma empresa deseje comunicar aos clientes.</p>
-                                <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="cartoes_visitas.html" style="text-decoration: none;">
-                        <div class="card">
-                            <img src="imagem/cartao_visitaVernizLocal.png" class="card-img-top" alt="cartão de visita ">
-                            <div class="card-body ">
-                                <h5 class="card-title">Cartão de Visitas</h5>
-
-                                <p class="card-text">O cartão de visita reflete a identidade e a imagem corporativa da
-                                    empresa,
-                                    razão pela qual é considerado como uma ferramenta de grande valia para o
-                                    profissional.
-
+                                <p style="border: solid #333 1px ;width: 70%; padding: 2px;margin-top: 30px;">+
+                                    Saiba
+                                    mais
                                 </p>
-                                <p style="border: solid #333 1px ;width: 70%; padding: 2px;">+ Saiba mais</p>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="imagem/tags.png" class="card-img-top" alt="tags">
-                        <div class="card-body">
-                            <h5 class="card-title">Tags</h5>
-                            <p class="card-text">A sua finalidade pode ir bem mais além de apenas informar. Quando
-                                usadas
-                                para impactar o cliente, agregam muito mais valor à marca e trazem benefícios ao
-                                negócio.
-                            </p>
-                            <p style="border: solid #333 1px ;width: 70%; padding: 2px;margin-top: 30px;">+ Saiba mais
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="box_foto_servico">
+        <div class="box_foto_servico nov">
 
-        <div class="box-foto">
+            <div class="box-foto">
 
-            <div class="fotosServicos" style="background-image: url('fotos_servicos/aloha.jpg');">
-                <figcaption>cartão visitas 300g</figcaption>
-            </div>
-            <div class="fotosServicos" style="background-image: url('fotos_servicos/ari.jpg');">
-                <figcaption>cartão visitas 300g</figcaption>
-            </div>
-            <div class="fotosServicos" style="background-image: url('fotos_servicos/manos.jpg');">
-                <figcaption>cartão visitas 300g</figcaption>
-            </div>
-            <div class="fotosServicos" style="background-image: url('fotos_servicos/mario.jpg');">
-                <figcaption>cartão visitas 300g</figcaption>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <section id="parceiros">
-        <h3>Parceiros:</h3>
-        <div style="display: flex; flex-wrap: wrap; text-align: center; width:60%;max-width: 800px; margin: auto;">
-            <div class="lojas" id="ninha">
-                <a href="https://www.instagram.com/ninha_modas_regattieri/" target="_blank"> <img
-                        src="imagem/ninha_modas.png" alt="loja ninha moda">
-                    <div class="cont-parceiros">
-
-                        <p>27 99922-5805<br>27 99885-3073 <br>
-
-                            @ninha_modas_regattieri</p>
-
-                    </div>
-                </a>
-
-            </div>
-            <div class="lojas " id="musaFitness">
-                <a href="https://www.instagram.com/musafitnessbeach/" target="_blank"><img src="imagem/musaFitness.png"
-                        alt="intagram musa fitness">
-                    <div class="cont-parceiros">
-
-                        <p>27 99986-2566 <br>
-                            @musafitnessbeach</p>
-                    </div>
-                </a>
-
-            </div>
-            <div class="lojas" id="diego_designer">
-                <img src="imagem/diego_nunes_designer.png" alt="">
-                <div class="cont-parceiros">
-                    <p>27 99532-1787 <br>
-                    </p>
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/aloha.jpg');">
+                    <figcaption>cartão visitas 300g</figcaption>
                 </div>
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/ari.jpg');">
+                    <figcaption>cartão visitas 300g</figcaption>
+                </div>
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/manos.jpg');">
+                    <figcaption>cartão visitas 300g</figcaption>
+                </div>
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/mario.jpg');">
+                    <figcaption>cartão visitas 300g</figcaption>
+                </div>
+
             </div>
-            <div class="lojas " id="manosGame">
-                <a href="#"><img src="imagem/logo_manos.png" alt="intagram musa fitness">
+        </div>
+
+
+
+        <div id="parceiros"  >
+            <h3>Parceiros:</h3>
+            <div style="display: flex; flex-wrap: wrap; text-align: center; width:60%;max-width: 800px; margin: auto;"
+                >
+                <div class="lojas" id="ninha">
+                    <a href="https://www.instagram.com/ninha_modas_regattieri/" target="_blank"> <img
+                            src="imagem/ninha_modas.png" alt="loja ninha moda">
+                        <div class="cont-parceiros">
+
+                            <p>27 99922-5805<br>27 99885-3073 <br>
+
+                                @ninha_modas_regattieri</p>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="lojas " id="musaFitness">
+                    <a href="https://www.instagram.com/musafitnessbeach/" target="_blank"><img
+                            src="imagem/musaFitness.png" alt="intagram musa fitness">
+                        <div class="cont-parceiros">
+
+                            <p>27 99986-2566 <br>
+                                @musafitnessbeach</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="lojas" id="diego_designer">
+                    <img src="imagem/diego_nunes_designer.png" alt="">
                     <div class="cont-parceiros">
-
-                        <p>27 99857-1629 <br> 3076-2054</p>
-                    </div>
-                </a>
-
-            </div>
-            <div class="lojas " id="multivix">
-                <a href="https://www.instagram.com/eadmultivix_viana/" target="_blank">
-                    <div class="cont-parceiros">
-
-                        <p>POLO VIANA <br><br> 27 99995-6070
-                            <br>@eadmultivix_viana
+                        <p>27 99532-1787 <br>
                         </p>
                     </div>
-                </a>
+                </div>
+                <div class="lojas " id="manosGame">
+                    <a href="#"><img src="imagem/logo_manos.png" alt="intagram musa fitness">
+                        <div class="cont-parceiros">
 
+                            <p>27 99857-1629 <br> 3076-2054</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="lojas " id="multivix">
+                    <a href="https://www.instagram.com/eadmultivix_viana/" target="_blank">
+                        <div class="cont-parceiros">
+
+                            <p>POLO VIANA <br><br> 27 99995-6070
+                                <br>@eadmultivix_viana
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
             </div>
         </div>
+        
     </section>
-    <footer class="text-center pt-3" >
-        <p> Diego Nunes Santos
-        <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
-            27 99532-1787 / 99645-8627
-        </a></p>
-    </footer>
+    <section>
+        <footer class="text-center">
+            <p> Diego Nunes Santos
+                <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
+                    27 99532-1787 / 99645-8627
+                </a>
+            </p>
+        </footer>
+    </section>
+
 
 
 </body>

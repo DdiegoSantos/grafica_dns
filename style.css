@@ -8,6 +8,7 @@
 
 body {
     background-color: #ffffff;
+    
 }
 
 
@@ -20,6 +21,11 @@ body {
 section {
     width: 100%;
 
+}
+#menu{
+    width: 200px;
+    background-color: #ffffff;
+    
 }
 
 header#cabecalho {
@@ -96,7 +102,7 @@ header#cabecalho #cab-contato img {
 .box_foto_servico {
     background-color: #dfdbdb;
     text-align: center;
-    height: 100%;
+    
 }
 
 .box-foto {
@@ -599,6 +605,7 @@ footer a {
 footer {
     background-color: #dadada;
     padding: 5px;
+    
 }
 
 #calendario_parede img {
