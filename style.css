@@ -666,7 +666,7 @@ footer {
     height: 280px;
 }
 
-#zap-verde {
+.zap-verde {
     height: 20px;
     width: auto;
     position: fixed;
@@ -679,8 +679,90 @@ footer {
     border-radius: 6px;
 
 }
+#zap-verde {
+    height: 20px;
+    width: auto;
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    display: inline-flex;
+    z-index: 1;
+    height: auto;
+    padding: 3px;
+    border-radius: 6px;
+    display: none;
+}
+#botFechar{
+    width :30px;
+    height :30px;
+    color :#333;
+    background :#fff;
+    text-align:center;
+    cursor :pointer;
+    border-radius :5px;
+    align-items:center;
+    padding-top: 2px;
+}
+h1,
+p,
+a {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  padding: 16px;
+}
+
+input,
+button {
+  height: 40px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 48px;
+}
+
+button img {
+  margin-right: 8px;
+}
+
+a {
+  color: #25d366;
+}
+
+
 
 #zap-verde img {
+    height: 50px;
+    width: auto;
+    margin: auto 0 auto 0;
+
+}
+
+.zap-verde img {
     height: 50px;
     width: auto;
     margin: auto 0 auto 0;

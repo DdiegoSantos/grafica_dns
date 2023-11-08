@@ -74,9 +74,7 @@
     <div id="wind-header">
 
         <div id="box_wind">
-            <div>
-                <h1>WIND <br> BANNERS</h1>
-            </div>
+            
 
 
             <picture>
@@ -87,12 +85,19 @@
         </div>
     </div>
     <section class="corpo-section" id="windbanner">
-        <div id="zap-verde">
-
-            <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
-                <img src="imagem/logo-zap-verde.png" alt="orçamento">
-            </a>
-        </div>
+        <div id="zap-verde" ><div id="botFechar" onclick="closedForm()">X</div>
+                    <form  method="get" onsubmit="abrirWhatsapp()" >
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                        <textarea name="msg" id="msg" placeholder="Mensagem" cols="30" rows="5" required></textarea><br>
+                        <button type="submit"><img src="imagem/logo-zap-verde.png" alt="Icone Whatsapp"><span>Enviar dados p/ Whatsapp</span>
+                      </form>
+                   
+                </div>
+                <div class="zap-verde" onclick="formulario()" >
+                    <img src="imagem/logo-zap-verde.png" alt="orçamento">
+                </div>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">

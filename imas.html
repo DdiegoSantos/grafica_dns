@@ -50,8 +50,22 @@
             </div>
         </div>
     </nav>
-    
-    <section class="corpo-section imas" >
+    <div id="zap-verde">
+        <div id="botFechar" onclick="closedForm()">X</div>
+        <form method="get" onsubmit="abrirWhatsapp()">
+            <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+            <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+            <textarea name="msg" id="msg" placeholder="Mensagem" cols="30" rows="5" required></textarea><br>
+            <button type="submit"><img src="imagem/logo-zap-verde.png" alt="Icone Whatsapp"><span>Enviar dados p/
+                    Whatsapp</span>
+        </form>
+
+    </div>
+    <div class="zap-verde" onclick="formulario()">
+        <img src="imagem/logo-zap-verde.png" alt="orçamento">
+    </div>
+    <section class="corpo-section imas">
         <div class="box-header" style="margin-bottom: 20px;">
             <div>
                 <picture>
@@ -67,7 +81,8 @@
                         <img src="imas/ima1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">ímãs De Geladeira <br> 500 unid. </h5>
-                            <p class="card-text"> Tam.: 53x48 ímãs De Geladeira Corte Reto ou Cantos Arredondados Couchê 250g
+                            <p class="card-text"> Tam.: 53x48 ímãs De Geladeira Corte Reto ou Cantos Arredondados Couchê
+                                250g
                             </p>
                             <h2 class="preços card-text">R$225,00</h2>
                         </div>
@@ -78,25 +93,26 @@
                         <img src="imas/ima2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">ímãs De Geladeira <br> 1000 unid. </h5>
-                            <p class="card-text"> Tam.: 53x48 ímãs De Geladeira Corte Reto ou Cantos Arredondados Couchê 250g
+                            <p class="card-text"> Tam.: 53x48 ímãs De Geladeira Corte Reto ou Cantos Arredondados Couchê
+                                250g
                             </p>
                             <h2 class="preços card-text">R$280,00</h2>
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div>
         </section>
-        
+
         <section class="corpo-section imas">
             <h3>Imãs corte reto 100x45</h3>
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
-                    <div class="card" >
+                    <div class="card">
                         <img src="imas/ima3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">ímãs De Geladeira <br> 500 unid. </h5>
                             <p class="card-text">Tam.: 100x45 ímãs De Geladeira Corte Reto Couchê 250g</p>
-                            <h2 class="preços card-text" >R$385,00</h2>
+                            <h2 class="preços card-text">R$385,00</h2>
                         </div>
                     </div>
                 </div>
@@ -107,23 +123,19 @@
                             <h5 class="card-title">ímãs De Geladeira <br> 500 unid. </h5>
                             <p class="card-text">Tam.: 100x45 ímãs De Geladeira Corte Reto Couchê 250g</p>
                             <h2 class="preços card-text">R$465,00</h2>
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div id="zap-verde">
-
-            <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
-                <img src="imagem/logo-zap-verde.png" alt="orçamento">
-            </a>
-        </div>
+        
     </section>
-    <footer class="text-center pt-3" >
+    <footer class="text-center pt-3">
         <p> Diego Nunes Santos
-        <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
-            27 99532-1787 / 99645-8627
-        </a></p>
+            <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
+                27 99532-1787 / 99645-8627
+            </a>
+        </p>
     </footer>
 </body>
 <script src="grafica.js"></script>

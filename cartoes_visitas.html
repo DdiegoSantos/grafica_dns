@@ -116,12 +116,19 @@
         </div>
 
         <section id="cartao" class="container  mt-4" id="cartoes-visitas">
-            <div id="zap-verde">
-
-                <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
+            <div id="zap-verde" ><div id="botFechar" onclick="closedForm()">X</div>
+                    <form  method="get" onsubmit="abrirWhatsapp()" >
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                        <textarea name="msg" id="msg" placeholder="Mensagem" cols="30" rows="5" required></textarea><br>
+                        <button type="submit"><img src="imagem/logo-zap-verde.png" alt="Icone Whatsapp"><span>Enviar dados p/ Whatsapp</span>
+                      </form>
+                   
+                </div>
+                <div class="zap-verde" onclick="formulario()" >
                     <img src="imagem/logo-zap-verde.png" alt="orçamento">
-                </a>
-            </div>
+                </div>
 
             <h2>CARTÃO DE VISITAS</h2>
             <div class="row row-cols-1 row-cols-md-4 ">
@@ -180,7 +187,15 @@
                 </div>
             </div>
         </section>
-    <iframe src="footer.html" frameborder="0"></iframe>
+        <section>
+            <footer class="text-center">
+                <p> Diego Nunes Santos
+                    <a href="https://api.whatsapp.com/send?phone=5527995321787" target="_blank">
+                        27 99532-1787 / 99645-8627
+                    </a>
+                </p>
+            </footer>
+        </section>
        
 </body>
 <script src="grafica.js"></script>
