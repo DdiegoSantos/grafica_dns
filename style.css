@@ -703,21 +703,10 @@ footer {
     align-items:center;
     padding-top: 2px;
 }
-h1,
-p,
-a {
-  text-align: center;
-}
 
-p {
-  font-size: 14px;
-  margin-top: 16px;
-  margin-bottom: 24px;
-}
 
 input,
-textarea,
-button {
+textarea {
   width: 100%;
   margin-bottom: 16px;
   border-radius: 4px;
@@ -729,8 +718,7 @@ textarea {
   padding: 16px;
 }
 
-input,
-button {
+input{
   height: 40px;
 }
 
@@ -747,6 +735,7 @@ button {
 
 button img {
   margin-right: 8px;
+ 
 }
 
 a {
