@@ -18,6 +18,10 @@
         height: 100%;
     }
 
+    p {
+        margin: auto;
+    }
+
     section {
         background-image: url('imagem_cart_int/background-paisagem.png');
         background-repeat: no-repeat;
@@ -31,26 +35,26 @@
     }
 
     .foto_perfil {
-        margin: 50px auto;
+        margin: 20px auto 0 auto;
         display: flex;
     }
 
     .foto_perfil img {
         margin: auto;
-        width: 80%;
+        width: 55%;
     }
 
     .box_icones {
         display: flex;
         flex-wrap: wrap;
-        margin: 10px auto 20px auto;
-        width: 250px;
+        margin: 30px auto;
+        width: 450px;
 
     }
 
     .icones {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
         margin: 10px auto;
         display: flex;
         background-color: #fff;
@@ -73,21 +77,32 @@
     .dev {
         width: 100%;
         display: flex;
-        margin: 40px 0;
+        margin: 30px 0;
     }
 
     .dev img {
-        width: 30%;
+        width: 40%;
         margin: auto;
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+    }
+
+    table img {
+        width: 80px;
+        align-items: baseline;
     }
 </style>
 
 <body>
     <section>
         <div class="foto_perfil">
-            <img src="imagem_cart_int/logo-perfil.png" alt="">
+            <img src="imagem_cart_int/logotipo.png" alt="">
         </div>
-        <div class="box_icones">
+        <div style="display: flex; width: 70%; margin: auto;">
+
             <div class="icones">
                 <a href="https://www.instagram.com/dns_developer/" target="_blank">
 
@@ -104,24 +119,79 @@
                     <img src="imagem_cart_int/liga.png" alt="">
                 </a>
             </div>
-            <div style="display: flex; width: 70%; margin: auto;">
-                <div class="icones">
-                    <a href="https://ddiegosantos.github.io/grafica_dns" target="_blank">
-                        <img src="imagem_cart_int/site.png" alt="">
+            <div class="icones">
+                <a href="https://ddiegosantos.github.io/grafica_dns" target="_blank">
+                    <img src="imagem_cart_int/site.png" alt="">
 
-                    </a>
-                </div>
-                <div class="icones">
-                    <a href="https://maps.app.goo.gl/cG2XC99Siah3aPHj7" target="_blank">
-
-                        <img src="imagem_cart_int/locali.png" alt="">
-                    </a>
-                </div>
-
+                </a>
             </div>
+            <div class="icones">
+                <a href="https://maps.app.goo.gl/cG2XC99Siah3aPHj7" target="_blank">
+
+                    <img src="imagem_cart_int/locali.png" alt="">
+                </a>
+            </div>
+
         </div>
+        <p>clique nos icones</p>
+        <div class="box_icones">
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://ddiegosantos.github.io/grafica_dns/adesivos.html" target="_blank">
+                            <img src="imagem_cart_int/adesivos.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://ddiegosantos.github.io/grafica_dns/banner.html" target="_blank">
+                            <img src="imagem_cart_int/banners.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" target="_blank">
+                            <img src="imagem_cart_int/blocos.png" alt="">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://ddiegosantos.github.io/grafica_dns/cartoes_visitas.html" target="_blank">
+                            <img src="imagem_cart_int/cartão.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://ddiegosantos.github.io/grafica_dns/calendario.html" target="_blank">
+                            <img src="imagem_cart_int/calendario.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://ddiegosantos.github.io/grafica_dns/imas.html" target="_blank">
+                            <img src="imagem_cart_int/ima.png" alt="">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://ddiegosantos.github.io/grafica_dns/panfletos.html" target="_blank">
+                            <img src="imagem_cart_int/panfleto.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://ddiegosantos.github.io/grafica_dns/tags.html" target="_blank">
+                            <img src="imagem_cart_int/tag.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://ddiegosantos.github.io/grafica_dns/windbanner.html" target="_blank">
+                            <img src="imagem_cart_int/wind.png" alt="">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
         <div class="dev">
-            <img src="imagem_cart_int/dn_developer.png" alt="">
+            <img src="imagem_cart_int/diego.png" alt="">
         </div>
 
     </section>
