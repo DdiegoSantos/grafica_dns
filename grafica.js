@@ -24,6 +24,23 @@ function calcularValorBanner(item) {
     }
 
 }
+function calcularValorCartao(item) {
+    
+    if (dia >= 9 && dia <= 15 ) {
+        var ValorFinal = ["R$95,00", "R$100,00", "R$125,00", "R$150,00"];
+
+        var preco = document.getElementById('precos' + item);
+        let semana = document.getElementById('semana');
+        semana.innerHTML = "semana de promoção: 9 à 15"
+        semana.style.backgroundColor = 'red';
+        semana.style.color = 'white';
+        semana.style.textTransform = 'uppercase';
+        semana.style.textAlign = 'center';
+
+        preco.innerHTML = ValorFinal[item]
+    }
+
+}
 
 function tela() {
     display = window.screen.width;
@@ -53,7 +70,7 @@ function temaMes(){
         }
         
     }
-    if(mes == 12){
+    if(mes == 12 && dia >=15){
         body = document.body
         body.style.backgroundColor = '#800000';
         body.style.color = 'white'

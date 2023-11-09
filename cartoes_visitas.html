@@ -12,7 +12,7 @@
 </head>
 
 
-<body onload="tela()">
+<body onload="tela(),calcularValorCartao(0),calcularValorCartao(1),calcularValorCartao(2),calcularValorCartao(3)">
     <nav class="navbar fixed-top  navbar-expand-lg navbar bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Home</a>
@@ -130,7 +130,7 @@
                     <img src="imagem/logo-zap-verde.png" alt="orçamento">
                 </div>
 
-            <h2>CARTÃO DE VISITAS</h2>
+            <h2>CARTÃO DE VISITAS</h2> <p id="semana"></p>
             <div class="row row-cols-1 row-cols-md-4 ">
                 <div class="col">
                     <div class="card">
@@ -140,7 +140,7 @@
                                     unid.</small></h5>
                             <p><small class="text-body-secondary">Verniz Total Frente <br> couchê Brilho - 250g -
                                     Colorido F/V - prazo de entrega: 4 a 7 dias úteis</small></p>
-                            <p class="preços card-text">R$105,00</p>
+                            <p id="precos0" class="preços card-text">R$105,00</p>
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,7 @@
                             <p><small class="text-body-secondary">Verniz Total Frente <br>couchê Brilho - 300g -
                                     Colorido F
                                     - prazo de entrega: 4 a 7 dias úteis</small></p>
-                            <p class="preços card-text">R$110,00</p>
+                            <p id="precos1" class="preços card-text">R$110,00</p>
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                             <p><small class="text-body-secondary ">Verniz Total Frente <br> couchê Brilho - 300g -
                                     Colorido
                                     F/V - prazo de entrega: 4 a 7 dias úteis</small></p>
-                            <p class="preços card-text">R$135,00</p>
+                            <p id="precos2" class="preços card-text">R$135,00</p>
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                                     unid.</small></h5>
                             <p><small class="text-body-secondary">Verniz Localizado Frente <br> couchê Brilho - 300g -
                                     Colorido F/V - prazo de entrega: 4 a 7 dias úteis</small></p>
-                            <p class="preços card-text">R$160,00</p>
+                            <p id="precos3" class="preços card-text">R$160,00</p>
                         </div>
                     </div>
                 </div>

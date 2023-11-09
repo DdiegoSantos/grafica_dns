@@ -12,7 +12,7 @@
 </head>
 
 
-<body onload="tela(), temaMes()">
+<body onload="tela()">
 
     <nav class="navbar fixed-top  navbar-expand-lg navbar bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
@@ -119,22 +119,24 @@
 
         <!--================================================================================================-->
     </section>
-    <section >
+    <section>
 
 
         <div>
             <div id="bemVindo">
-                <div id="zap-verde" ><div id="botFechar" onclick="closedForm()">X</div>
-                    <form  method="get" onsubmit="abrirWhatsapp()" >
+                <div id="zap-verde">
+                    <div id="botFechar" onclick="closedForm()">X</div>
+                    <form method="get" onsubmit="abrirWhatsapp()">
                         <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
                         <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
                         <input type="email" name="email" id="email" placeholder="E-mail" required><br>
                         <textarea name="msg" id="msg" placeholder="Mensagem" cols="30" rows="5" required></textarea><br>
-                        <button type="submit"><img src="imagem/logo-zap-verde.png" alt="Icone Whatsapp"><span>Enviar dados p/ Whatsapp</span>
-                      </form>
-                   
+                        <button type="submit"><img src="imagem/logo-zap-verde.png" alt="Icone Whatsapp"><span>Enviar
+                                dados p/ Whatsapp</span>
+                    </form>
+
                 </div>
-                <div class="zap-verde" onclick="formulario()" >
+                <div class="zap-verde" onclick="formulario()">
                     <img src="imagem/logo-zap-verde.png" alt="orçamento">
                 </div>
 
@@ -156,6 +158,11 @@
         </div>
 
         <div id="servicos" class="nov">
+            <!--<div id="promocaoSemana">
+                <h2>Promoção da Semana</h2>
+                <img src="imagem_cart_int/cartaoPromocao.png" alt="">
+
+            </div>-->
             <div class="box-section ">
 
                 <div class="row row-cols-1 row-cols-md-2 ">
@@ -254,16 +261,18 @@
                 <div class="fotosServicos" style="background-image: url('fotos_servicos/mario.jpg');">
                     <figcaption>cartão visitas 300g</figcaption>
                 </div>
+                <div class="fotosServicos" style="background-image: url('fotos_servicos/adesivo_vidro.jpeg');">
+                    <figcaption>Adesivo vidro</figcaption>
+                </div>
 
             </div>
         </div>
 
 
 
-        <div id="parceiros"  >
+        <div id="parceiros">
             <h3>Parceiros:</h3>
-            <div style="display: flex; flex-wrap: wrap; text-align: center; width:60%;max-width: 800px; margin: auto;"
-                >
+            <div style="display: flex; flex-wrap: wrap; text-align: center; width:60%;max-width: 800px; margin: auto;">
                 <div class="lojas" id="ninha">
                     <a href="https://www.instagram.com/ninha_modas_regattieri/" target="_blank"> <img
                             src="imagem/ninha_modas.png" alt="loja ninha moda">
@@ -271,7 +280,8 @@
 
                             <p>27 99922-5805<br>27 99885-3073 <br>
 
-                                @ninha_modas_regattieri</p>
+                                ninha_modas_regattieri
+                            </p>
 
                         </div>
                     </a>
@@ -282,8 +292,10 @@
                             src="imagem/musaFitness.png" alt="intagram musa fitness">
                         <div class="cont-parceiros">
 
-                            <p>27 99986-2566 <br>
-                                @musafitnessbeach</p>
+                            <p>
+                                27 99986-2566 <br>
+                                musafitnessbeach
+                            </p>
                         </div>
                     </a>
 
@@ -291,12 +303,13 @@
                 <div class="lojas" id="diego_designer">
                     <img src="imagem/diego_nunes_designer.png" alt="">
                     <div class="cont-parceiros">
-                        <p>27 99532-1787 <br>
+                        <p>
+                            27 99532-1787 <br>
                         </p>
                     </div>
                 </div>
                 <div class="lojas " id="manosGame">
-                    <a href="#"><img src="imagem/logo_manos.png" alt="intagram musa fitness">
+                    <a href="#"><img src="imagem/logo_manos.png" alt="">
                         <div class="cont-parceiros">
 
                             <p>27 99857-1629 <br> 3076-2054</p>
@@ -309,7 +322,7 @@
                         <div class="cont-parceiros">
 
                             <p>POLO VIANA <br><br> 27 99995-6070
-                                <br>@eadmultivix_viana
+                                <br>eadmultivix_viana
                             </p>
                         </div>
                     </a>
@@ -317,7 +330,7 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
     <section>
         <footer class="text-center">
